@@ -10,15 +10,8 @@ $(function(){
     });
 });
 
-//2.circleBox SVG애니메이션
-$(function(){
-    $('.svgAni').find('path').each(function(i, path){
-        var length = path.getTotalLength();
-        //alert(length);  
-    });
-});
 
-//3.스크롤애니메이션
+//2.스크롤애니메이션
 $(function(){
    $('.animate').scrolla({
        mobile: true,  //모바일버전시 활성화
@@ -26,7 +19,7 @@ $(function(){
    });
 });
 
-//4.배경색 변경
+//3.배경색 변경
 $(window).on('scroll resize', function(){
     var scrollTop = $(document).scrollTop();
     bgColor();
@@ -43,7 +36,7 @@ $(window).on('scroll resize', function(){
     }
 });
 
-//5.햄버거 메뉴
+//4.햄버거 메뉴
 $(function(){
     $('.menuOpen button.open').on('click', function(){
         $('.menuOpen .menuWrap').addClass('on');
