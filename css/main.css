@@ -47,7 +47,7 @@ i {
     font-style: normal;
 }
 
-inner
+
 /*Layout*/
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -474,7 +474,7 @@ body {
 }
 
 body.on {
-    background-image: url(/img/giphy\ \(2\).gif);
+    background-image: url(/img/bg.gif);
     transition: all 0.4s;
 }
 
@@ -589,7 +589,6 @@ body.on {
     transition: all 0.5s;
     opacity: 1;
 }
-
 /*ul li애니*/
 .menuOpen .menuWrap ul {
     display: none;
