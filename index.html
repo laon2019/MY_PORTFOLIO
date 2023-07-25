@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=1.0">
@@ -10,213 +11,235 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/scrolla.jquery.min.js"></script>
     <script src="js/script_main.js"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
 </head>
+
 <body>
- <div class="wrap">
-    <!--menuOpen-->
-    <div class="menuOpen">
-        <button class="open"><img src="img/menu.png" alt="메뉴열기"></button>
-        <div class="menuWrap">
-          <a href="#" class="close"><img src="img/close.png" alt=""></a>
-          <a href="#" class="close en">close</a>
-          <ul class="tit en animate" data-animate="motion">
-            <li><span><b><a href="#Tech Stack" class="close1">Tech Stack</a></b></span></li>
-            <li><span><b><a href="#Project">Project</a></b></span></li>
-            <li><span><b><a href="#Mini-Project1">Mini-Project1</a></b></span></li>
-            <li><span><b><a href="#Mini-Project2">Mini-Project2</a></b></span></li>
-          </ul>
+    <div class="wrap">
+        <div id="welcomeMessage" class="welcome-message">
+            <!-- <h3>조규범 포트폴리오에 오신걸 환영합니다</h3> -->
         </div>
-    </div>
-     <!--header-->
-     <header>
-         <div class="innerHeader">
-          <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
-          <nav class="mainMenu">
-             <span class="bar"></span>
-              <ul class="gnb en">
-                  <li><a href="#Tech Stack">Tech Stack</a></li>
-                  <li><a href="#Project">Project</a></li>
-                  <li><a href="#Mini-Project1">Mini-Project1</a></li>
-                  <li><a href="#Mini-Project2">Mini-Project2</a></li>
-              </ul>
-<!--================= sns 주소 입력하세요~=============-->
-              <ul class="sns">
-                  <li><a href="#"><img src="img/github.png" alt="" width="27px"></a></li>
-                  <!-- 필요한거 추가 -->
-                  <!-- <li><a href="#"><img src="img/sns-icon02.png" alt=""></a></li>
+        <!--header-->
+        <header>
+            <div class="innerHeader">
+                <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+                <nav class="mainMenu">
+                    <span class="bar"></span>
+                    <ul class="gnb en">
+                        <li><a href="#Tech Stack">Tech Stack</a></li>
+                        <li><a href="#Project">Team Project</a></li>
+                        <li><a href="#Mini-Project1">Personal Project</a></li>
+                        <li><a href="#Mini-Project2">Study Record</a></li>
+                    </ul>
+                    <!--================= sns 주소 입력하세요~=============-->
+                    <ul class="sns">
+                        <li><a href="#"><img src="img/github.png" alt="" width="27px"></a></li>
+                        <!-- 필요한거 추가 -->
+                        <!-- <li><a href="#"><img src="img/sns-icon02.png" alt=""></a></li>
                   <li><a href="#"><img src="img/sns-icon03.png" alt=""></a></li>
                   <li><a href="#"><img src="img/sns-icon04.png" alt=""></a></li> -->
-              </ul>
-          </nav>
-         </div>
-     </header> 
-     
-     <!--contents--> 
-     <section class="visual">
-        <!--================= 이미지 넣으세요~=============-->
-         <div class="mainImg"><p class="img animate" data-animate="motion"><img src="img/myimg.png" alt="" ></p></div>
-         <div class="mainTxt">
-             <h2 class="tit en animate" data-animate="motion" >
-                 <span class="en_s"><b>introduce</b></span>
-                 <span><b>Front-end Developers</b></span>
-                 <span><b>조규범</b></span>
-             </h2>
-             <div class="txt animate" data-animate="motion">
-                 <p><b><span>"안녕하세요 프론트엔드 개발자 조규범입니다."</span><br><br>
-                    생년월일 : 1999년 10월 27일<br>
-                    Git :<a href="https://github.com/laon2019">깃 허브 링크←</a><br>
-                    Notion : <a href="https://kyubumcho.notion.site/Frontend-Developer-e68db40aad8f40bb95e58bad6ee239cb">Notion 포트폴리오 링크←</a><br>
-                    E-mail : laon5987@nate.com<br>
-                    학교 : 제주고등학교(졸업), 한양사이버대학교 컴퓨터공학과(재학)<br>
-                    교육 : JAVA 기반 클라우드 융합플랫폼 개발자 양성 과정 수료<br>
-                        한국정보교육원(2022년 9월 17~2023년 3월 15일)</b></p>
-             </div>
-         </div>
-     </section>
-     <section class="customer" id="Tech Stack">
-        <h2 class="tit en animate" data-animate="motion" ><span><b>기술스택</b></span></h2>
-    </section>
-     <section class="journal">      
-        <div class="inner">
-             
-            <div class="box">
-                <h2 class="tit en animate" data-animate="motion" >
-                    <span class="en_s">tech stack</span>
-                    <span><b>기술 스택</b></span>
-                </h2>
-                <ul>
-                    <li>
-                        <h3>Front-End</h3>
-                        <p>HTML5<br>
-                           CSS<br>
-                           JavaScript<br>
-                           jquery<br>
-                           React<br>
-                            Bootstrap</p>
-                    </li>
-                    <li>
-                        <h3>Back-End</h3>
-                        <p>Spring<br>
-                            JSP<br>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>DB</h3>
-                        <p>
-                            MySql<br>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>Tool</h3>
-                        <p>Eclipse<br>
-                            STS(Spring-tool-suite)<br>
-                            Visual Studio Code<br>
-                            Github
-                        </p>
-                    </li>
-                </ul>
-                
+                    </ul>
+                </nav>
             </div>
+        </header>
+
+        <!--contents-->
+        <section class="visual">
             <!--================= 이미지 넣으세요~=============-->
-            <div class="box"><p class="img animate" data-animate="motion"><img src="img/skill.png" alt=""></p></div>
-        </div>
-    
-</section>
-<!--==============================-->
-<section class="customer" id="Project">
-    <h2 class="tit en animate" data-animate="motion" ><span><b>메인프로젝트</b></span></h2>
-</section>
-<!--==============================-->
-<section class="service">
-    <div class="inner">
-
-        <div class="box">
-            
-             <!--================= 이미지 넣으세요~=============-->
-            <p class="img animate" data-animate="motion"><a href="https://malleable-ringer-a62.notion.site/Hello-World-91b02811dcae4e01a8af9b39e5304749"><img src="img/mainproject.png" alt=""></a></p>
-            <div class="txt">
-                <h1>맥북 벤치마킹</h1><br>
-               <p>팀 HelloWord의 프론트엔드를 담당하여 퍼블리싱 작업을 담당하고 바닐라 스크립트를 이용하여 각 종 앱들을 구현하였습니다.</p>
-
+            <div class="mainImg">
+                <p class="img animate" data-animate="motion"><img src="img/myimg.png" alt=""></p>
             </div>
-        </div>
-        <div class="box">
-            
-             <!--================= 이미지 넣으세요~=============-->
-            <p class="img animate" data-animate="motion"><a href="https://malleable-ringer-a62.notion.site/Hello-World-91b02811dcae4e01a8af9b39e5304749"><img src="img/mianproject1.png" alt=""></a></p>
-            <div class="txt">
-                <h1>테트리스</h1><br>
-               <p>다양한 앱들 중 테트리스 기능이며 점수가 3점이 올라갈 때마다 속도가 빨라지도록 설계하고 직접 백엔드 작업을 통해 점수를 저장하여 순위 별로 나오도록 설계하였습니다.</p>
-
+            <div class="mainTxt">
+                <h2 class="tit en animate" data-animate="motion">
+                    <span class="en_s"><b>introduce</b></span>
+                    <span><b>Front-end Developers</b></span>
+                    <span><b>조규범</b></span>
+                </h2>
+                <div class="txt animate" data-animate="motion">
+                    <p><b><span>"안녕하세요 프론트엔드 개발자 조규범입니다."</span><br><br>
+                            생년월일 : 1999년 10월 27일<br>
+                            Git :<a class="githublink" href="https://github.com/laon2019">깃 허브 링크←</a><br>
+                            E-mail : laon5987@nate.com<br>
+                            학교 : 제주고등학교(졸업), 한양사이버대학교 컴퓨터공학과(재학)<br>
+                            교육 : JAVA 기반 클라우드 융합플랫폼 개발자 양성 과정 수료<br>
+                            한국정보교육원(2022년 9월 17~2023년 3월 15일)</b></p>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
-<!--==============================-->
-<section class="customer" id="Mini-Project1">
-    <h2 class="tit en animate" data-animate="motion" ><span><b>미니프로젝트1</b></span></h2>
-</section>
-<!--==============================-->
-<section class="service">
-    <div class="inner">
+        </section>
+        <section class="customer" id="Tech Stack">
+            <h2 class="tit en animate" data-animate="motion"><span><b>기술스택</b></span></h2>
+        </section>
+        <section class="journal">
+            <div class="inner">
 
-        <div class="box">
-            
-             <!--================= 이미지 넣으세요~=============-->
-            <p class="img animate" data-animate="motion"><a href="https://github.com/laon2019/Deeplearningproject"><img src="img/mini1.png" alt=""></a></p>
-            <div class="txt"><br><br>
-                <h1>미니 프로젝트</h1><br>
-               <p>첫 미니프로젝트로 html+css를 활용하여 웹 퍼블리싱을 하였습니다.</p>
+                <div class="box">
+                    <h2 class="tit en animate" data-animate="motion">
+                        <span class="en_s">tech stack</span>
+                        <span><b>기술 스택</b></span>
+                    </h2>
+                    <ul>
+                        <li>
+                            <h3>Front-End</h3>
+                            <p>HTML5<br>
+                                CSS<br>
+                                JavaScript<br>
+                                jquery<br>
+                                ajax<br>
+                                React<br>
+                                Redux<br>
+                                Bootstrap</p>
+                        </li>
+                        <li>
+                            <h3>DB</h3>
+                            <p>
+                                MySql<br>
+                            </p>
+                        </li>
+                        <li>
+                            <h3>Tool</h3>
+                            <p>Eclipse<br>
+                                STS(Spring-tool-suite)<br>
+                                Visual Studio Code<br>
+                                Github
+                            </p>
+                        </li>
+                    </ul>
 
+                </div>
+                <!--================= 이미지 넣으세요~=============-->
+                <div class="box">
+                    <p class="img animate" data-animate="motion"><img width="100%" src="img/skill.jpeg" alt=""></p>
+                </div>
             </div>
-        </div>
-        <div class="box">
+
+        </section>
+
+        <section class="customer" id="Project">
+            <h2 class="tit en animate" data-animate="motion"><span><b>팀프로젝트</b></span></h2>
+        </section>
+
+        <section class="service">
             
-             <!--================= 이미지 넣으세요~=============-->
-            <p class="img animate" data-animate="motion"><a href="https://github.com/laon2019/Deeplearningproject"><img src="img/mini2.png" alt=""></a></p>
-            <div class="txt">
-                <h1>구글 딥러닝</h1><br>
-               <p>Teachable Machine Google API를 활용하여 신발 종류들을 학습시켜 이미지를 넣어 분류해 주는 기능을 구현하고 부트스트랩을 활용하여 디자인하였습니다.</p>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!--==============================-->
-<section class="customer" id="Mini-Project2">
-    <h2 class="tit en animate" data-animate="motion" ><span><b>미니프로젝트2</b></span></h2>
-</section>
-
-<!--==============================-->
-<section class="service">
-    <div class="inner">
-
-        <div class="box">
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/helloworld.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">맥OS 구현</h4>
+                      <p>팀원 : 5명</p>
+                      <p class="card-text">맥 OS와 비슷하게 구현하여 다양한 어플을 제작하여 다양한 기능이 있도록 제작하였습니다.</p>
+                      <a class="githublink" href="https://github.com/HoSeong7/team4">GitHub Link ← 클릭</a>
+                      <p class="useTech">사용기술 : <span class="HTML">HTML</span>, <span class="CSS">CSS</span>, <span class="JS">JS</span></p>
+                      <a href="https://www.notion.so/Hello-World-91b02811dcae4e01a8af9b39e5304749" class="btn btn-primary">Go To Notion</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./img/simple.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">Simple Board</h4>
+                      <p>팀원 : 3명</p>
+                      <p class="card-text">Ajax를 사용하여 서버와 통신하여 데이터를 게시물 및 댓글 기능이 있는 심플한 게시판을 제작하였습니다.</p>
+                      <a class="githublink" href="https://github.com/yu-teacher/SimpleBoardProject">GitHub Link ← 클릭</a>
+                      <p class="useTech">사용기술 : <span class="HTML">HTML</span>, <span class="CSS">CSS</span>, <span class="JS">JS</span>, , <span class="jQuery">jQuery</span></p>
+                      <a href="https://www.notion.so/simpleboard/f3d5e5d46dc24df8bc932fdd7a3fca75?v=89bc4a0d154f4a89b32964c67cb6fcf9" class="btn btn-primary">Go To Notion</a>
+                    </div>
+                  </div>
+                  
             
-             <!--================= 이미지 넣으세요~=============-->
-            <p class="img animate" data-animate="motion"><a href="https://github.com/laon2019/webstudy-portfolio-"><img src="img/mini3.png" alt=""></a></p>
-            <div class="txt">
-                <h1>퍼블리싱 프로젝트</h1><br>
-               <p>개인 프로젝트로 인프런 강의를 보며 html+css+JavaScript를 활용하여 웹 퍼블리싱 프로젝트를 구현하였습니다.</p>
+        </section>
 
-            </div>
-        </div>
-        <div class="box">
+        <section class="customer" id="Mini-Project1">
+            <h2 class="tit en animate" data-animate="motion"><span><b>개인프로젝트</b></span></h2>
+        </section>
+
+        <section class="service">
             
-             <!--================= 이미지 넣으세요~=============-->
-            <p class="img animate" data-animate="motion"><a href="https://github.com/laon2019/webstudy-portfolio-"><img src="img/mini4.png" alt=""></a></p>
-            <div class="txt">
-                <h1>다양한 효과 적용</h1><br>
-               <p>css animation을 활용하여 글자들의 효과를 더했고 JavaScript를 활용하여 좌표를 구하여 배경색을 변경하는 효과를 더했습니다. 그리고 반응형을 통하여 다양한 디스플레이에서 보일 수 있도록 구현하였습니다.</p>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/netflix.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <br>
+                      <h4 class="card-title">Netflix 프로젝트</h4>
+                      <p class="card-text">영화 API를 활용하여 다양한 영화를 보여주고 영화의 디테일정보 및 페이징 기능도 구현하였습니다.</p>
+                      <a class="githublink" href="https://github.com/laon2019/netflix-project">GitHub Link ← 클릭</a>
+                      <p class="useTech">사용기술 : <span class="React">React</span>, <span class="Redux">Redux</span></p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./img/emotion.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">감정 일기장 프로젝트</h4>
+                      <p class="card-text">인프런 강의를 들으며 React를 활용한 일기장 프로젝트를 제작하였습니다. 일기장 기능에는 날짜, 그날의 기분, 내용을  생성 할 수 있습니다.</p>
+                      <a class="githublink" href="https://github.com/laon2019/emotion-diary">GitHub Link ← 클릭</a>
+                      <p class="useTech">사용기술 : <span class="React">React</span></p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/mini3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <br>
+                      <h4 class="card-title">퍼블리싱 프로젝트</h4>
+                      <p class="card-text">개인 프로젝트로 인프런 강의를 보며 html+css+JavaScript를 활용하여 웹 퍼블리싱 프로젝트를 구현하였습니다.</p>
+                      <a class="githublink" href="https://github.com/laon2019/webstudy-portfolio-">GitHub Link ← 클릭</a>
+                      <p class="useTech">사용기술 : <span class="HTML">HTML</span>, <span class="CSS">CSS</span>, <span class="JS">JS</span></p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./img/mini2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <br>
+                      <h4 class="card-title">구글 딥러닝 api</h4>
+                      <p class="card-text">유튜브 조코딩 강의를 들으며 Teachable Machine Google API를 활용하여 프로젝트를 완성했습니다.</p>
+                      <a class="githublink" href="https://github.com/laon2019/Deeplearningproject">GitHub Link ← 클릭</a>
+                      <p class="useTech">사용기술 : <span class="HTML">HTML</span>, <span class="CSS">CSS</span>, <span class="JS">JS</span></p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                  
+                
+           
+        </section>
+
+        <section class="customer" id="Mini-Project2">
+            <h2 class="tit en animate" data-animate="motion"><span><b>공부 기록</b></span></h2>
+        </section>
+
+
+        <section class="service">
+            
+                <div class="card" style="width: 18rem;">
+                    <img src="./img/gongbu.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">공부방</h4>
+                      <p class="card-text">하루하루 공부한 내용을 기록해 놓을 곳입니다.</p>
+                      <a href="https://www.notion.so/cdc47275ea924722b26b97fb2cdef78e?v=a3b6902e885843969227293136655334" class="btn btn-primary">Go To Notion</a>
+                    </div>
+                </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./img/study.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">IT 스터디</h4>
+                      <p class="card-text">일주일에 2번씩 온라인으로 스터디를 진행하였습니다.</p>
+                      <a href="https://www.notion.so/3f8d5e3beea843948b1cded4cdd0bd31?v=fd5766aaf3704f2a8c6ca82ede44ee0c" class="btn btn-primary">Go To Notion</a>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img src="./img/coding.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h4 class="card-title">코딩 테스트</h4>
+                      <p class="card-text">프로그래머스에서 코딩테스트를 연습하였습니다.</p>
+                      <a href="https://github.com/laon2019/algorithm-JavaScript" class="btn btn-primary">Go To GitHub</a>
+                    </div>
+                  </div>
+        </section>
+        <footer>
+            <div class="bottom en">
+                <h1>Thanks for watching.</h1>
             </div>
-        </div>
-    </div>
-</section>
-     <footer>
-         <div class="bottom en">
-             <h1>Thanks for watching.</h1>
-         </div>
-</footer> 
+        </footer>
 </body>
+
 </html>

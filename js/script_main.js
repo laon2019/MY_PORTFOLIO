@@ -47,13 +47,32 @@ $(function(){
 });
 
 
-
-
-
-
-
-
-
-
-
-
+// Update JavaScript to show the welcome message and hide it after 3 seconds
+document.addEventListener("DOMContentLoaded", function () {
+    const welcomeMessage = document.getElementById("welcomeMessage");
+    welcomeMessage.style.display = "block";
+    welcomeMessage.classList.add("shaking"); // Add the class for the shaking effect
+  
+    const text = "조규범 포트폴리오에 오신걸 환영합니다~~!!!";
+    let index = 0;
+  
+    function showNextCharacter() {
+      if (index < text.length) {
+        welcomeMessage.textContent += text.charAt(index);
+        index++;
+        setTimeout(showNextCharacter, 100); // Adjust the duration (milliseconds) between characters here
+      } else {
+        setTimeout(hideWelcomeMessage, 3000); // Wait for 3 seconds and then hide the welcome message
+      }
+    }
+  
+    function hideWelcomeMessage() {
+      welcomeMessage.style.display = "none";
+    }
+  
+    showNextCharacter();
+  });
+  
+  
+  
+  
