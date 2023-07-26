@@ -203,9 +203,11 @@ section.visual .mainTxt .txt {
 .tit span.gray {
     color: #ccc;
 }
-.txt h1{
+
+.txt h1 {
     font-size: 20px;
 }
+
 .txt p {
     color: #2b2a2a;
     line-height: 2;
@@ -216,15 +218,17 @@ section.visual .mainTxt .txt {
     font-weight: bolder;
     font-size: 20px;
 }
-.txt p b span{
+
+.txt p b span {
     font-size: 30px;
     color: orangered;
 }
-.txt p b a:hover{
+
+.txt p b a:hover {
     color: #7c6ff4;
 }
 
-/*section안에  .inner(공통 넓이 가이드) .box(플루트)*/
+/* section안에 .inner(공통 넓이 가이드) */
 section .inner {
     width: 1320px;
     margin: auto;
@@ -233,14 +237,14 @@ section .inner {
     border-radius: 35px;
     background-color: white;
     border: 3px solid rgb(95, 95, 95);
-   
 }
 
 section .inner .box {
     float: left;
-    width: 48%;
+    width: 50%;
 }
-/*section.journal*/
+
+/* section.journal */
 section.journal {
     position: relative;
     padding: 190px 0 120px;
@@ -302,36 +306,49 @@ section.journal .inner .box ul li p {
 
 
 
+
+
 /*section.service*/
 section.service {
     padding: 190px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* 가로 방향으로 가운데 정렬합니다. */
+    justify-content: center;
+    /* 가로 방향으로 가운데 정렬합니다. */
 }
 
 .card {
-    flex-basis: 18rem; /* 카드의 너비를 18rem으로 고정합니다. */
-    margin: 1rem; /* 카드 사이의 간격을 설정합니다. */
+    flex-basis: 18rem;
+    /* 카드의 너비를 18rem으로 고정합니다. */
+    margin: 1rem;
+    /* 카드 사이의 간격을 설정합니다. */
+    height: 300px;
+    /* 고정된 높이를 지정합니다. 이 높이에 이미지가 맞춰질 것입니다. */
+    overflow: hidden;
+    /* 카드의 내용이 넘칠 경우 숨깁니다. */
 }
 
 /* 모든 이미지를 100% 크기로 조정합니다. */
 .card img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    /* 이미지가 카드의 높이에 맞게 조정됩니다. */
+    object-fit: cover;
+    /* 이미지의 가로세로비를 유지하면서 적절히 자르거나 늘립니다. */
 }
+
 
 /* 화면이 768px 이하인 경우에만 적용됩니다. */
 @media (max-width: 768px) {
     .card {
-        flex-basis: calc(100% - 2rem); /* 화면이 줄어들면 카드를 한 줄에 하나씩 배치합니다. */
+        flex-basis: calc(100% - 2rem);
+        /* 화면이 줄어들면 카드를 한 줄에 하나씩 배치합니다. */
+        height: auto;
+        /* 카드의 높이를 자동으로 설정합니다. */
     }
 }
-
-
-
 .card:hover {
-    animation: move 1s ease infinite normal none running;
+    animation: move 1s ease 2 normal running; /* Apply the animation on hover, and run it three times */
 }
 @keyframes move {
     0% {
@@ -387,7 +404,8 @@ footer .top .tit {
 footer .bottom {
     padding: 40px 0 40px;
 }
-footer .bottom h1{
+
+footer .bottom h1 {
     text-align: center;
     font-size: 50px;
 }
@@ -486,47 +504,95 @@ body.on {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Change the background color to white with 70% opacity */
-    color: #fff; /* Change the text color to black */
-    font-size: 36px; /* Increase the font size to your desired value */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Change the background color to white with 70% opacity */
+    color: #fff;
+    /* Change the text color to black */
+    font-size: 50px;
+    /* Increase the font size to your desired value */
     text-align: center;
-    padding-top: 50vh; /* Vertically center the text */
+    padding-top: 50vh;
+    /* Vertically center the text */
     z-index: 9999;
-    white-space: pre; /* Preserve new lines */
-    padding-top: 40vh; /* Adjust the padding-top value to move the text higher */
-    display: none; /* Hide the welcome message by default */
+    white-space: pre;
+    /* Preserve new lines */
+    padding-top: 40vh;
+    /* Adjust the padding-top value to move the text higher */
+    display: none;
+    /* Hide the welcome message by default */
+}
+
+@media screen and (max-width: 768px) {
+    .welcome-message {
+        font-size: 20px;
+        /* Adjust the font size as needed */
+    }
+}
+/* Apply a basic style to the techbox container */
+.techbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 150px;
   }
   
-  @media screen and (max-width: 768px) {
-    .welcome-message {
-      font-size: 20px; /* Adjust the font size as needed */
-    }
+  /* Style each techimg container inside the techbox */
+  .techimg {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    margin: 10px; /* Adjust the margin as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0; /* Set the background color */
+    border-radius: 8px; /* Add some border radius for a rounded appearance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
   }
+  
+  /* Style the SVG icons inside each techimg container */
+  .techimg svg {
+    width: 60%; /* Adjust the size of the SVG icon */
+    height: 60%; /* Adjust the size of the SVG icon */
+  }
+  
 
-
-.useTech{
+.useTech {
     font-weight: 600;
 }
-.React{
+
+.React {
     color: rgb(41, 121, 251);
-}
-.Redux{
-    color: purple;
-}
-.JS{
-    color: rgb(210, 190, 54);
-}
-.jQuery{
-    color: rgb(255, 221, 0);
-}
-.HTML{
-    color: orange;
-}
-.CSS{
-    color: rgb(6, 79, 196);
+    fill: rgb(41, 121, 251);
 }
 
-.githublink{
+.Redux {
+    color: purple;
+    fill: purple;
+}
+
+.JS {
+    color: rgb(210, 190, 54);
+    fill: rgb(210, 190, 54);
+}
+
+.jQuery {
+    color: rgb(255, 221, 0);
+    fill: rgb(255, 221, 0);
+}
+
+.HTML {
+    color: orange;
+    fill: orange;
+}
+
+.CSS {
+    color: rgb(6, 79, 196);
+    fill: rgb(6, 79, 196);;
+}
+.mySql{
+    fill: gray;
+}
+.githublink {
     color: black;
 }
 
@@ -596,21 +662,25 @@ body.on {
 
 
     section.journal .inner .box .img {
-        width: 90%;
+        width: 100%;
     }
 
     section.customer {
         padding: 40px 0;
     }
-    .journal .inner .box h2{
+
+    .journal .inner .box h2 {
         text-align: center;
     }
-    .journal .inner .box ul{
+
+    .journal .inner .box ul {
         text-align: center;
     }
-    .journal .inner .box ul li{
+
+    .journal .inner .box ul li {
         text-align: center;
     }
+
     footer {
         width: 100%;
         padding: 0 30px;
@@ -645,8 +715,10 @@ body.on {
         height: 80px;
         padding: 0;
         line-height: 80px;
-        -ms-transform: rotate(90deg); /* IE 9 */
-        -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+        -ms-transform: rotate(90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(90deg);
+        /* Chrome, Safari, Opera */
         transform: rotate(90deg);
         display: block;
     }
@@ -679,7 +751,7 @@ body.on {
         padding: 80px 0;
     }
 
- 
+
     section.journal .inner .box .img {
         margin: 0 auto 50px;
         padding-top: 0;
@@ -757,13 +829,16 @@ body.on {
         clear: both;
     }
 
-   
+    .techbox{
+        padding-top: 10px;
+        padding-bottom: 50px;
+    }
 
-    footer .bottom h1{
+    footer .bottom h1 {
         text-align: center;
         font-size: 40px;
     }
-    
+
 }
 
 /*모바일해상도 767px*/
@@ -804,11 +879,13 @@ body.on {
     .menuOpen .menuWrap .close.en {
         display: none;
     }
+
     .menuOpen .menuWrap .tit li a:hover,
     .menuOpen .menuWrap .tit li a:focus {
         transform: translateX(30px);
         color: #1b1b1b;
     }
+
     .menuOpen .menuWrap.on:before {
         left: 20%;
     }
@@ -856,6 +933,7 @@ body.on {
 
     section.journal .inner .box ul {
         padding-top: 20px;
+        padding-left: 0;
     }
 
     section.journal .inner .box ul li {
@@ -889,7 +967,7 @@ body.on {
         width: 100%;
     }
 
-    
+
 
     section.service .inner .box.design .img.motion:after {
         background: #fff;
@@ -934,11 +1012,11 @@ body.on {
     }
 
 
-    footer .bottom h1{
+    footer .bottom h1 {
         text-align: center;
         font-size: 30px;
     }
-    
+
 
 }
 
@@ -966,32 +1044,15 @@ body.on {
         font-size: 14px;
     }
 
- 
+
 
     section.service .inner .box.design .tit {
         font-size: 22px;
     }
-    footer .bottom h1{
+
+    footer .bottom h1 {
         text-align: center;
         font-size: 20px;
     }
-    
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
