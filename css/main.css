@@ -361,7 +361,10 @@ section.service {
     border-left: 1px solid black;
     border-right: 1px solid black;
 }
-
+.card-body h4,
+.card-body p{
+    font-weight: 600;
+}
 /* 화면이 768px 이하인 경우에만 적용됩니다. */
 @media (max-width: 768px) {
     .card {
