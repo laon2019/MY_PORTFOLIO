@@ -86,7 +86,6 @@ body {
 
 /*header*/
 .innerHeader {
-    background-color: white;
     max-width: 1520px;
     padding: 0 30px;
     height: 110px;
@@ -422,7 +421,7 @@ footer {
     width: 1320px;
     padding: 20px 20px 0;
     margin: auto;
-    background-color: white;
+    /* background-color: white; */
     border-top: 2px solid black;
     border-left: 2px solid black;
     border-right: 2px solid black;
