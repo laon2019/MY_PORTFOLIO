@@ -377,7 +377,7 @@ section.service {
 .card:hover {
     animation: move 1s ease 1 normal running; /* Apply the animation on hover, and run it three times */
     background-color: rgb(236, 203, 248);
-    transform: scaleX(1.2) scaleY(1.2);
+    transform: scaleX(1.4) scaleY(1.4);
     /* color: white; */
     z-index: 3;
 }
@@ -749,7 +749,9 @@ body.on {
 
 /*1024 이하 테블렛*/
 @media screen and (max-width:1000px) {
-   
+    .card:hover{
+        transform: scaleX(1.07) scaleY(1.13);
+    }
     .innerHeader .logo a{
         margin-top: 10px;
         text-align: center;
@@ -909,9 +911,7 @@ body.on {
     body {
         font-size: 13px;
     }
-    .card:hover{
-        transform: scaleX(1.07) scaleY(1.07);
-    }
+    
     .innerHeader .logo a{
         margin-top: 0;
         text-align: center;
