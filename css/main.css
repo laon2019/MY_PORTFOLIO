@@ -12,8 +12,23 @@
     padding: 0;
 }
 
-
-
+/* Set the container (body in this case) to position relative */
+body {
+    position: relative;
+    margin: 0; /* Remove default margin for full coverage */
+  }
+  
+  /* Style the particle canvas to cover the entire container */
+  #particles-js {
+    position: absolute;
+    width: 100%; /* Set the width to viewport width */
+    height: 100%; /* Set the height to viewport height */
+    background-color: rgb(236, 203, 248);
+    z-index: -1; /* Ensure the particle canvas is behind the content */
+  }
+.aewf{
+    display: none;
+}
 h1,
 h2,
 h3,
@@ -25,10 +40,12 @@ h6 {
 }
 
 a {
-    color: inherit;
-    text-decoration: inherit;
+    text-decoration: none;
 }
-
+.aFont{
+    color: black;
+    text-decoration: none;
+}
 img {
     vertical-align: middle;
 }
@@ -69,14 +86,15 @@ body {
 
 /*header*/
 .innerHeader {
+    background-color: white;
     max-width: 1520px;
     padding: 0 30px;
     height: 110px;
     line-height: 110px;
     margin: auto;
-    border-bottom: 3px solid rgb(95, 95, 95);
-    border-left: 3px solid rgb(95, 95, 95);
-    border-right: 3px solid rgb(95, 95, 95);
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 35px;
     margin-bottom: 150px;
@@ -150,7 +168,7 @@ section.visual {
     margin: auto;
     margin-top: 30px;
     overflow: hidden;
-    border: 3px solid rgb(95, 95, 95);
+    border: 5px solid black;
     border-radius: 35px;
     margin-bottom: 150px;
 }
@@ -221,7 +239,6 @@ section.visual .mainTxt .txt {
 
 .txt p b span {
     font-size: 30px;
-    color: orangered;
 }
 
 .txt p b a:hover {
@@ -236,7 +253,7 @@ section .inner {
     padding: 20px;
     border-radius: 35px;
     background-color: white;
-    border: 3px solid rgb(95, 95, 95);
+    border: 5px solid black;
 }
 
 section .inner .box {
@@ -332,9 +349,16 @@ section.service {
     height: 100%;
     /* 이미지가 카드의 높이에 맞게 조정됩니다. */
     object-fit: cover;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
     /* 이미지의 가로세로비를 유지하면서 적절히 자르거나 늘립니다. */
 }
-
+.card-body{
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
 
 /* 화면이 768px 이하인 경우에만 적용됩니다. */
 @media (max-width: 768px) {
@@ -347,7 +371,12 @@ section.service {
 }
 .card:hover {
     animation: move 1s ease 2 normal running; /* Apply the animation on hover, and run it three times */
+    background-color: rgb(236, 203, 248);
+    scale: 1.2;
+    /* color: white; */
+    z-index: 3;
 }
+
 @keyframes move {
     0% {
         transform: translate(0, 0);
@@ -363,8 +392,14 @@ section.service {
 section.customer {
     padding: 40px;
     text-align: center;
-    background-color: rgb(49, 49, 49);
+    background-color: black;
     margin-top: 30px;
+}
+.customer.on{
+    background-color: white;
+}
+.customerTitle.on{
+    color: black;
 }
 
 section.customer .tit {
@@ -385,9 +420,9 @@ footer {
     padding: 20px 20px 0;
     margin: auto;
     background-color: white;
-    border-top: 3px solid rgb(95, 95, 95);
-    border-left: 3px solid rgb(95, 95, 95);
-    border-right: 3px solid rgb(95, 95, 95);
+    border-top: 5px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
 }
@@ -490,7 +525,7 @@ body {
 }
 
 body.on {
-    background-color: #231e1e;
+    background-color: black;
     transition: all 0.4s;
 }
 
@@ -594,6 +629,25 @@ body.on {
     color: black;
 }
 
+#page{
+    background-color: orange;
+    border: 1px solid orange;
+}
+#github{
+    background-color: gray;
+    border: 1px solid gray;
+}
+.btnBox {
+    display: flex;
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line on small screens */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 10px; /* Add some space between the buttons */
+  }
+  
+  /* Set equal width for both buttons inside .btnBox */
+  .btnBox .btn {
+    flex: 1; /* Make both buttons occupy equal widths */
+  }
 
 
 /*반응형웹제작*/
@@ -688,7 +742,9 @@ body.on {
 
 /*1024 이하 테블렛*/
 @media screen and (max-width:1000px) {
-
+    .card:hover{
+        scale: 1.05;
+    }
     /*768px 까지*/
     .innerHeader {
         height: 80px;

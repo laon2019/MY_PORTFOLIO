@@ -24,14 +24,17 @@ $(window).on('scroll resize', function(){
     var scrollTop = $(document).scrollTop();
     bgColor();
     function bgColor(){
-        if(scrollTop > 1000){
+        if(scrollTop > 0){
             $('body').addClass('on');
+            $('.customer').addClass('on');
+            $('.customerTitle').addClass('on');
         }else {
             $('body').removeClass('on');
+            $('.customer').removeClass('on');
+            $('.customerTitle').removeClass('on');
         }
         // if(scrollTop > 2700){
         //     $('body').removeClass('on');
-
         // } 
     }
 });
