@@ -1,6 +1,8 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&display=swap');
 @font-face {
     font-family: 'handel gothic';
     src: url(../font/handel gothic.ttf) format('truetype');
@@ -38,7 +40,12 @@ h6 {
     font-weight: 700;
     font-size: inherit;
 }
-
+.font1{
+    font-family: 'Orbit', sans-serif;
+}
+.font2{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
 a {
     text-decoration: none;
 }
@@ -335,15 +342,16 @@ section.service {
 }
 
 .card {
+    border-radius: 15px;
     flex-basis: 18rem;
-    /* 카드의 너비를 18rem으로 고정합니다. */
     margin: 1rem;
-    /* 카드 사이의 간격을 설정합니다. */
     height: 300px;
-    /* 고정된 높이를 지정합니다. 이 높이에 이미지가 맞춰질 것입니다. */
     overflow: hidden;
     transition: transform 1s ease; 
     box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.5);
+}
+#cardStyle{
+    border: 2px solid black;
 }
 /* 모든 이미지를 100% 크기로 조정합니다. */
 .card img {
@@ -351,19 +359,16 @@ section.service {
     height: 100%;
     /* 이미지가 카드의 높이에 맞게 조정됩니다. */
     object-fit: cover;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     /* 이미지의 가로세로비를 유지하면서 적절히 자르거나 늘립니다. */
 }
-.card-body{
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
+.card-body h4{
+    font-weight: 800;
 }
-.card-body h4,
 .card-body p{
     font-weight: 600;
+    /* font-family: 'Stylish', sans-serif; */
+    font-size: 18px;
+    font-family: 'Orbit', sans-serif;
 }
 /* 화면이 768px 이하인 경우에만 적용됩니다. */
 @media (max-width: 768px) {
@@ -376,7 +381,7 @@ section.service {
 }
 .card:hover {
     animation: move 1s ease 1 normal running; /* Apply the animation on hover, and run it three times */
-    background-color: rgb(236, 203, 248);
+    background-color: rgb(238, 216, 247);
     transform: scaleX(1.4) scaleY(1.4);
     /* color: white; */
     z-index: 3;
@@ -402,6 +407,9 @@ section.customer {
 }
 .customer.on{
     background-color: white;
+}
+.customerTitle{
+    font-family: 'Orbit', sans-serif;
 }
 .customerTitle.on{
     color: black;
