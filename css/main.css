@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
 @font-face {
     font-family: 'handel gothic';
     src: url(../font/handel gothic.ttf) format('truetype');
@@ -41,7 +42,7 @@ h6 {
     font-size: inherit;
 }
 .font1{
-    font-family: 'Orbit', sans-serif;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 .font2{
     font-family: 'IBM Plex Sans KR', sans-serif;
@@ -104,17 +105,17 @@ body {
     border-bottom-right-radius: 35px;
     border-bottom-left-radius: 35px;
     margin-bottom: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4); /* Add a subtle box shadow */
 }
 
 .innerHeader .logo {
     float: left;
-}
-
-.innerHeader .logo a {
-    display: block;
-    margin-top: 20px;
-    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    font-family: 'Black Han Sans', sans-serif;
 }
 
 /*gnb + sns*/
@@ -154,7 +155,7 @@ span.bar {
 /*sns*/
 .innerHeader .mainMenu .sns {
     float: left;
-    margin-left: 300px;
+    margin-left: 100px;
 }
 
 .innerHeader .mainMenu .sns li {
@@ -178,6 +179,8 @@ section.visual {
     border: 2px solid black;
     border-radius: 35px;
     margin-bottom: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4); /* Add a subtle box shadow */
 }
 
 section.visual .mainImg {
@@ -259,7 +262,8 @@ section .inner {
     overflow: hidden;
     padding: 20px;
     border-radius: 35px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4); /* Add a subtle box shadow */
     border: 2px solid black;
 }
 
@@ -351,7 +355,7 @@ section.service {
     box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.5);
 }
 #cardStyle{
-    border: 2px solid black;
+    border: 2px solid rgb(181, 181, 181);
 }
 /* 모든 이미지를 100% 크기로 조정합니다. */
 .card img {
@@ -365,10 +369,10 @@ section.service {
     font-weight: 800;
 }
 .card-body p{
-    font-weight: 600;
+    font-weight: 100;
     /* font-family: 'Stylish', sans-serif; */
-    font-size: 18px;
-    font-family: 'Orbit', sans-serif;
+    font-size: 15px;
+    font-family: 'IBM Plex Sans KR', sans-serif;
 }
 /* 화면이 768px 이하인 경우에만 적용됩니다. */
 @media (max-width: 768px) {
@@ -381,10 +385,14 @@ section.service {
 }
 .card:hover {
     animation: move 1s ease 1 normal running; /* Apply the animation on hover, and run it three times */
-    background-color: rgb(238, 216, 247);
+    background-color: rgb(245, 233, 249);
     transform: scaleX(1.4) scaleY(1.4);
     /* color: white; */
     z-index: 3;
+    
+}
+#cardStyle:hover{
+    border: 2px solid rgb(0, 0, 0);
 }
 
 @keyframes move {
@@ -403,10 +411,14 @@ section.customer {
     padding: 40px;
     text-align: center;
     background-color: black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
     margin-top: 30px;
 }
 .customer.on{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4); /* Add a subtle box shadow */
 }
 .customerTitle{
     font-family: 'Orbit', sans-serif;
@@ -438,6 +450,7 @@ footer {
     border-right: 2px solid black;
     border-top-right-radius: 35px;
     border-top-left-radius: 35px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 footer .top .tit {
@@ -760,22 +773,23 @@ body.on {
     .card:hover{
         transform: scaleX(1.07) scaleY(1.13);
     }
-    .innerHeader .logo a{
-        margin-top: 10px;
-        text-align: center;
+    .innerHeader .logo{
+        /* width: 100%; */
+        /* text-align: center; */
     }
     /*768px 까지*/
     .innerHeader {
         height: 80px;
         line-height: 80px;
     }
-
-    .innerHeader .mainMenu {
-        width: 0;
-        height: 0;
-        opacity: 0;
-        display: none;
+    .innerHeader .mainMenu .gnb li a{
+        font-size: 13px;
     }
+    .innerHeader .mainMenu .gnb li {
+        float: left;
+        margin: 0 10px;
+    }
+    
 
     .menuOpen button.open {
         position: absolute;
@@ -919,16 +933,22 @@ body.on {
     body {
         font-size: 13px;
     }
-    
-    .innerHeader .logo a{
-        margin-top: 0;
-        text-align: center;
+    .innerHeader .logo{
+        width: 100%;
     }
+    .innerHeader .mainMenu {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        display: none;
+    }
+    
     .innerHeader {
         height: 60px;
         line-height: 60px;
         padding: 0 20px;
     }
+    
     .txt p b {
         font-weight: bolder;
         font-size: 13px;
@@ -1105,7 +1125,7 @@ body.on {
     body {
         font-size: 12px;
     }
-
+   
     .tit span.en_s {
         font-size: 16px;
     }
