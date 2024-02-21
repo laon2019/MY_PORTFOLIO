@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
 @font-face {
     font-family: 'handel gothic';
     src: url(../font/handel gothic.ttf) format('truetype');
@@ -18,20 +19,26 @@
 /* Set the container (body in this case) to position relative */
 body {
     position: relative;
-    margin: 0; /* Remove default margin for full coverage */
-  }
-  
-  /* Style the particle canvas to cover the entire container */
-  #particles-js {
+    margin: 0;
+    /* Remove default margin for full coverage */
+}
+
+/* Style the particle canvas to cover the entire container */
+#particles-js {
     position: absolute;
-    width: 100%; /* Set the width to viewport width */
-    height: 100%; /* Set the height to viewport height */
+    width: 100%;
+    /* Set the width to viewport width */
+    height: 100%;
+    /* Set the height to viewport height */
     background-color: rgb(255, 146, 107);
-    z-index: -1; /* Ensure the particle canvas is behind the content */
-  }
-.aewf{
+    z-index: -1;
+    /* Ensure the particle canvas is behind the content */
+}
+
+.aewf {
     display: none;
 }
+
 h1,
 h2,
 h3,
@@ -41,19 +48,24 @@ h6 {
     font-weight: 700;
     font-size: inherit;
 }
-.font1{
+
+.font1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
-.font2{
+
+.font2 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
+
 a {
     text-decoration: none;
 }
-.aFont{
+
+.aFont {
     color: black;
     text-decoration: none;
 }
+
 img {
     vertical-align: middle;
 }
@@ -106,15 +118,18 @@ body {
     border-bottom-left-radius: 35px;
     margin-bottom: 150px;
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4); /* Add a subtle box shadow */
+    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4);
+    /* Add a subtle box shadow */
 }
 
 .innerHeader .logo {
     float: left;
     height: 100%;
     display: flex;
-    justify-content: center; /* 수평 가운데 정렬 */
-    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center;
+    /* 수평 가운데 정렬 */
+    align-items: center;
+    /* 수직 가운데 정렬 */
     font-family: 'Black Han Sans', sans-serif;
 }
 
@@ -180,7 +195,8 @@ section.visual {
     border-radius: 35px;
     margin-bottom: 150px;
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4); /* Add a subtle box shadow */
+    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4);
+    /* Add a subtle box shadow */
 }
 
 section.visual .mainImg {
@@ -263,7 +279,8 @@ section .inner {
     padding: 20px;
     border-radius: 35px;
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4); /* Add a subtle box shadow */
+    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4);
+    /* Add a subtle box shadow */
     border: 2px solid black;
 }
 
@@ -351,12 +368,14 @@ section.service {
     margin: 1rem;
     height: 300px;
     overflow: hidden;
-    transition: transform 1s ease; 
+    transition: transform 1s ease;
     box-shadow: 30px 30px 20px rgba(0, 0, 0, 0.5);
 }
-#cardStyle{
+
+#cardStyle {
     border: 2px solid rgb(181, 181, 181);
 }
+
 /* 모든 이미지를 100% 크기로 조정합니다. */
 .card img {
     width: 100%;
@@ -365,15 +384,18 @@ section.service {
     object-fit: cover;
     /* 이미지의 가로세로비를 유지하면서 적절히 자르거나 늘립니다. */
 }
-.card-body h4{
+
+.card-body h4 {
     font-weight: 800;
 }
-.card-body p{
+
+.card-body p {
     font-weight: 100;
     /* font-family: 'Stylish', sans-serif; */
     font-size: 15px;
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
+
 /* 화면이 768px 이하인 경우에만 적용됩니다. */
 @media (max-width: 768px) {
     .card {
@@ -383,15 +405,18 @@ section.service {
         /* 카드의 높이를 자동으로 설정합니다. */
     }
 }
+
 .card:hover {
-    animation: move 1s ease 1 normal running; /* Apply the animation on hover, and run it three times */
+    animation: move 1s ease 1 normal running;
+    /* Apply the animation on hover, and run it three times */
     background-color: rgb(255, 200, 180);
     transform: scaleX(1.4) scaleY(1.4);
     /* color: white; */
     z-index: 3;
-    
+
 }
-#cardStyle:hover{
+
+#cardStyle:hover {
     border: 2px solid rgb(0, 0, 0);
 }
 
@@ -399,10 +424,11 @@ section.service {
     0% {
         transform: translate(0, 0);
     }
+
     50% {
         transform: translate(0, -60px);
     }
-    
+
 }
 
 
@@ -416,14 +442,18 @@ section.customer {
 
     margin-top: 30px;
 }
-.customer.on{
+
+.customer.on {
     background-color: rgba(255, 255, 255, 0.7);
-    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4); /* Add a subtle box shadow */
+    box-shadow: 15px 15px 16px rgba(0, 0, 0, 0.4);
+    /* Add a subtle box shadow */
 }
-.customerTitle{
+
+.customerTitle {
     font-family: 'Orbit', sans-serif;
 }
-.customerTitle.on{
+
+.customerTitle.on {
     color: black;
 }
 
@@ -587,33 +617,42 @@ body.on {
         /* Adjust the font size as needed */
     }
 }
+
 /* Apply a basic style to the techbox container */
 .techbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 150px;
-  }
-  
-  /* Style each techimg container inside the techbox */
-  .techimg {
-    width: 100px; /* Adjust the width as needed */
-    height: 100px; /* Adjust the height as needed */
-    margin: 10px; /* Adjust the margin as needed */
+}
+
+/* Style each techimg container inside the techbox */
+.techimg {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: 100px;
+    /* Adjust the height as needed */
+    margin: 10px;
+    /* Adjust the margin as needed */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0; /* Set the background color */
-    border-radius: 8px; /* Add some border radius for a rounded appearance */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  }
-  
-  /* Style the SVG icons inside each techimg container */
-  .techimg svg {
-    width: 60%; /* Adjust the size of the SVG icon */
-    height: 60%; /* Adjust the size of the SVG icon */
-  }
-  
+    background-color: #f0f0f0;
+    /* Set the background color */
+    border-radius: 8px;
+    /* Add some border radius for a rounded appearance */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+}
+
+/* Style the SVG icons inside each techimg container */
+.techimg svg {
+    width: 60%;
+    /* Adjust the size of the SVG icon */
+    height: 60%;
+    /* Adjust the size of the SVG icon */
+}
+
 
 .useTech {
     font-weight: 600;
@@ -627,6 +666,26 @@ body.on {
 .Redux {
     color: purple;
     fill: purple;
+}
+
+.Recoil {
+    color: purple;
+    fill: purple;
+}
+
+.React-Query {
+    color: gray;
+    fill: gray;
+}
+
+.React-Router {
+    color: gray;
+    fill: gray;
+}
+
+.SB {
+    color: green;
+    fill: green;
 }
 
 .JS {
@@ -646,36 +705,48 @@ body.on {
 
 .CSS {
     color: rgb(6, 79, 196);
-    fill: rgb(6, 79, 196);;
+    fill: rgb(6, 79, 196);
+    ;
 }
-.mySql{
+
+.mySql {
     fill: gray;
+    color: gray;
 }
+
 .githublink {
     color: black;
 }
-.githublink:hover{
+
+.githublink:hover {
     color: black;
 }
-#page{
+
+#page {
     background-color: orange;
     border: 1px solid orange;
 }
-#github{
+
+#github {
     background-color: gray;
     border: 1px solid gray;
 }
+
 .btnBox {
     display: flex;
-    flex-wrap: wrap; /* Allow buttons to wrap to the next line on small screens */
-    justify-content: center; /* Center the buttons horizontally */
-    gap: 10px; /* Add some space between the buttons */
-  }
-  
-  /* Set equal width for both buttons inside .btnBox */
-  .btnBox .btn {
-    flex: 1; /* Make both buttons occupy equal widths */
-  }
+    flex-wrap: wrap;
+    /* Allow buttons to wrap to the next line on small screens */
+    justify-content: center;
+    /* Center the buttons horizontally */
+    gap: 10px;
+    /* Add some space between the buttons */
+}
+
+/* Set equal width for both buttons inside .btnBox */
+.btnBox .btn {
+    flex: 1;
+    /* Make both buttons occupy equal widths */
+}
 
 
 /*반응형웹제작*/
@@ -711,7 +782,7 @@ body.on {
 
 /*1024 테블릿모드*/
 @media screen and (max-width:1400px) {
-   
+
     /*1400px~1024px사이*/
     section.visual .mainTxt {
         margin-top: 50px;
@@ -770,26 +841,30 @@ body.on {
 
 /*1024 이하 테블렛*/
 @media screen and (max-width:1000px) {
-    .card:hover{
+    .card:hover {
         transform: scaleX(1.07) scaleY(1.13);
     }
-    .innerHeader .logo{
+
+    .innerHeader .logo {
         /* width: 100%; */
         /* text-align: center; */
     }
+
     /*768px 까지*/
     .innerHeader {
         height: 80px;
         line-height: 80px;
     }
-    .innerHeader .mainMenu .gnb li a{
+
+    .innerHeader .mainMenu .gnb li a {
         font-size: 13px;
     }
+
     .innerHeader .mainMenu .gnb li {
         float: left;
         margin: 0 10px;
     }
-    
+
 
     .menuOpen button.open {
         position: absolute;
@@ -916,7 +991,7 @@ body.on {
         clear: both;
     }
 
-    .techbox{
+    .techbox {
         padding-top: 10px;
         padding-bottom: 50px;
     }
@@ -933,26 +1008,29 @@ body.on {
     body {
         font-size: 13px;
     }
-    .innerHeader .logo{
+
+    .innerHeader .logo {
         width: 100%;
     }
+
     .innerHeader .mainMenu {
         width: 0;
         height: 0;
         opacity: 0;
         display: none;
     }
-    
+
     .innerHeader {
         height: 60px;
         line-height: 60px;
         padding: 0 20px;
     }
-    
+
     .txt p b {
         font-weight: bolder;
         font-size: 13px;
     }
+
     .menuOpen button.open {
         height: 60px;
         line-height: 60px;
@@ -1125,7 +1203,7 @@ body.on {
     body {
         font-size: 12px;
     }
-   
+
     .tit span.en_s {
         font-size: 16px;
     }
