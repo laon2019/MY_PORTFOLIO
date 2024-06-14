@@ -688,6 +688,11 @@ body.on {
     fill: green;
 }
 
+.Red {
+    color: red;
+    fill: red;
+}
+
 .JS {
     color: rgb(210, 190, 54);
     fill: rgb(210, 190, 54);
