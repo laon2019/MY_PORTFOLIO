@@ -396,6 +396,25 @@ section.service {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
+.before {
+    transition-delay: 1s;
+}
+.after {
+    opacity: 0;
+    display: none;
+    transition-delay: 1s;
+}
+.card:hover .before {
+    opacity: 0;
+    display: none;
+    transition-delay: 0s;
+}
+.card:hover .after {
+    opacity: 1;
+    display: block;
+    transition-delay: 0.5s;
+}
+
 /* 화면이 768px 이하인 경우에만 적용됩니다. */
 @media (max-width: 768px) {
     .card {
