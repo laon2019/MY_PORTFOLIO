@@ -63,6 +63,8 @@ a {
 
 .aFont {
     color: black;
+    font-weight: bolder;
+    font-size: 20px;
     text-decoration: none;
 }
 
