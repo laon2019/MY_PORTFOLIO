@@ -401,16 +401,19 @@ section.service {
 .before {
     transition-delay: 1s;
 }
+
 .after {
     opacity: 0;
     display: none;
     transition-delay: 1s;
 }
+
 .card:hover .before {
     opacity: 0;
     display: none;
     transition-delay: 0s;
 }
+
 .card:hover .after {
     opacity: 1;
     display: block;
@@ -772,6 +775,14 @@ body.on {
 .btnBox .btn {
     flex: 1;
     /* Make both buttons occupy equal widths */
+}
+
+.nfimap {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
 }
 
 
